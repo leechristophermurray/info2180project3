@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CheapoMail - Add User</title>
+		<link rel="stylesheet" href="adduser.css">
+	</head>
+	<body>
+		<form action="adduser.php" method = "post" onsubmit= "return validateForm();">
+			<label for="first_name">First Name:</label>
+			<input class = "adduserinput" type="text" id="first_name" name="first_name">
+			<label for="last_name">Last Name:</label>
+			<input class = "adduserinput" type="text" id="last_name" name="last_name">
+			<label for="username">Username:</label>
+			<input class = "adduserinput" type="text" id="username" name = "username">	
+			<label for="password">Password:</label>
+			<input class = "adduserinput" type="text" id="password" name = "password">
+			<input type="submit">
+		</form>
+		<span id="error"></span>
+		<script type = "text/javascript" src = "adduser.js"></script>
+	</body>
+</html>

@@ -9,13 +9,40 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
+    <link rel="stylesheet" href="css/inbox.css">    
+    <link rel="import" href="components/paper-fab/paper-fab.html">
+    <link rel="stylesheet" href="css/admin.css">    
+    
 	<title>Cheapo-Mail</title>
 </head>
 <body>
+
+    
 <header>
 	<h1>Cheapo-Mail</h1>
 </header>
+    
+            
+<div id="main">
+
+<ul id="navigationMenu">
+    <li>
+	    <a class="dash" href="#">
+            <span>dashboard</span>
+        </a>
+    </li>
+    
+    <li>
+    	<a class="logout" href="#">
+            <span>logout</span>
+        </a>
+    </li>
+</ul>
+    
+</div>
+    
+    
+    
 <div class="cd-tabs">
 
 	<ul class="cd-tabs-content">
@@ -23,12 +50,6 @@
 			<p>Inbox Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum recusandae rem animi accusamus quisquam reprehenderit sed voluptates, numquam, quibusdam velit dolores repellendus tempora corrupti accusantium obcaecati voluptate totam eveniet laboriosam?</p>
 
 			<p>Inbox Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum recusandae rem animi accusamus quisquam reprehenderit sed voluptates, numquam, quibusdam velit dolores repellendus tempora corrupti accusantium obcaecati voluptate totam eveniet laboriosam?</p>
-		</li>
-
-		<li data-content="new">
-			<p>New Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non a voluptatibus, ex odit totam cumque nihil eos asperiores ea, labore rerum. Doloribus tenetur quae impedit adipisci, laborum dolorum eaque ratione quaerat, eos dicta consequuntur atque ex facere voluptate cupiditate incidunt.</p>
-
-			<p>New Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non a voluptatibus, ex odit totam cumque nihil eos asperiores ea, labore rerum. Doloribus tenetur quae impedit adipisci, laborum dolorum eaque ratione quaerat, eos dicta consequuntur atque ex facere voluptate cupiditate incidunt.</p>
 		</li>
 
 		<li data-content="sent">
@@ -43,11 +64,6 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, enim, pariatur. Ab assumenda, accusantium! Consequatur magni placeat quae eos dicta, cum expedita sunt facilis est impedit possimus dolorum sequi nostrum nobis sit praesentium molestias nulla laudantium fugit corporis nam ut saepe harum ipsam? Debitis accusantium, omnis repudiandae modi, distinctio illo voluptatibus aperiam odio veritatis, quam perferendis eaque ullam. Temporibus tempore ad voluptates explicabo ea sit deleniti ipsum quos dolores tempora odio, ab corporis molestiae, eaque optio, perferendis! Cumque libero quia modi! Totam magni rerum id iusto explicabo distinctio, magnam, labore sed nemo expedita velit quam, perspiciatis non temporibus sit minus voluptatum. Iste, cumque sunt suscipit facere iusto asperiores, ullam dolorum excepturi quidem ea quibusdam deserunt illo. Nesciunt voluptates repellat ipsam.</p>
 		</li>
 
-		<li data-content="settings">
-			<p>Settings Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nam magni, ullam nihil a suscipit, ex blanditiis, adipisci tempore deserunt maiores. Nostrum officia, ratione enim eaque nihil quis ea, officiis iusto repellendus. Animi illo in hic, maxime deserunt unde atque a nesciunt? Non odio quidem deserunt animi quod impedit nam, voluptates eum, voluptate consequuntur sit vel, et exercitationem sint atque dolores libero dolorem accusamus ratione iste tenetur possimus excepturi. Accusamus vero, dignissimos beatae tempore mollitia officia voluptate quam animi vitae.</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ipsam eum reprehenderit minima at sapiente ad ipsum animi doloremque blanditiis unde omnis, velit molestiae voluptas placeat qui provident ab facilis.</p>
-		</li>
 
 		<li data-content="bucket">
 			<p>Trash Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque a iure nostrum animi praesentium, numquam quidem, nemo, voluptatem, aspernatur incidunt. Fugiat aspernatur excepturi fugit aut, dicta reprehenderit temporibus, nobis harum consequuntur quo sed, illum.</p>
@@ -59,16 +75,119 @@
     	<nav>
 		<ul class="cd-tabs-navigation">
 			<li><a data-content="inbox" class="selected" href="#0">Inbox</a></li>
-			<li><a data-content="new" href="#0">Scribe</a></li>
 			<li><a data-content="sent" href="#0">Sent</a></li>
 			<li><a data-content="store" href="#0">Archives</a></li>
-			<li><a data-content="settings" href="#0">Settings</a></li>
 			<li><a data-content="bucket" href="#0">Bucket</a></li>
 		</ul> <!-- cd-tabs-navigation -->
 	</nav>
     
+               
 </div> <!-- cd-tabs -->
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+    
+     <div id="wrap">
+                  <form action="" autocomplete="on">
+                  <input id="search" name="search" type="text" placeholder="What're we looking for?"><input id="search_submit" value="search" type="submit">
+                  </form>
+                </div>
+    <!--categorized email check-->
+    
+    
+    	<ul class="cd-items cd-container">
+		<li class="cd-item">
+			<img src="img/item-1.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Contact Threads</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/item-1.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Contact Threads</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/item-1.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Contact Threads</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/item-1.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Contact Threads</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/item-1.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Contact Threads</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/item-1.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Contact Threads</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/item-1.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Contact Threads</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/item-1.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Contact Threads</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/item-1.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Contact Threads</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/item-1.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Contact Threads</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/item-1.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Contact Threads</a>
+		</li> <!-- cd-item -->
+
+		<li class="cd-item">
+			<img src="img/item-1.jpg" alt="Item Preview">
+			<a href="#0" class="cd-trigger">Contact Threads</a>
+		</li> <!-- cd-item -->
+	</ul> <!-- cd-items -->
+
+	<div class="cd-quick-view">
+		<div class="cd-slider-wrapper">
+			<ul class="cd-slider">
+				<li class="selected"><img src="img/item-1.jpg" alt="Product 1"></li>
+				<li><img src="img/item-2.jpg" alt="Product 2"></li>
+				<li><img src="img/item-3.jpg" alt="Product 3"></li>
+			</ul> <!-- cd-slider -->
+
+			<ul class="cd-slider-navigation">
+				<li><a class="cd-next" href="#0">Prev</a></li>
+				<li><a class="cd-prev" href="#0">Next</a></li>
+			</ul> <!-- cd-slider-navigation -->
+		</div> <!-- cd-slider-wrapper -->
+
+		<div class="cd-item-info">
+			<h2>Contact Name</h2>
+			<p>[body/ summary of the thread]</p>
+
+			<ul class="cd-item-action">
+				<li><button class="add-to-cart">Respond</button></li>					
+				<li><a href="#0">Open Thread</a></li>	
+			</ul> <!-- cd-item-action -->
+		</div> <!-- cd-item-info -->
+		<a href="#0" class="cd-close">Close</a>
+	</div> <!-- cd-quick-view -->
+    
+    <!--categorized email check-->
+  
+    <paper-fab icon="create" class="blue" title="create"></paper-fab>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="js/velocity.min.js "></script>
+    <script src="js/inbox.js "></script>
+    <script src="js/admin.js "></script>
+    <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
 </body>
 </html>

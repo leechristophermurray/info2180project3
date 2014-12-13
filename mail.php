@@ -1,3 +1,5 @@
+<?php require('redirect.php'); ?>
+
 <!doctype html>
 <html lang="en" class="no-js">
 <head>

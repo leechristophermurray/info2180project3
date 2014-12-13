@@ -12,6 +12,7 @@ try {
 	if ($row) {
 		if ($form['password'] == $row['password']){
 			session_start();
+			$_SESSION['id'] = $row['id'];
 			$_SESSION['username'] = $form['username'];
 			$_SESSION['password'] = $form['password'];
 			header('Location: mail.php');

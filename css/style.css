@@ -267,7 +267,7 @@ header h1 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
-  color: grey;
+  /*color: grey;*/
   padding-top: 34px;
     
 }

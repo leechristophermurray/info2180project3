@@ -35,7 +35,7 @@
     </li>
     
     <li>
-    	<a class="logout" href="#">
+    	<a class="logout" href="Index.php">
             <span>logout</span>
         </a>
     </li>

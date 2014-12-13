@@ -48,10 +48,20 @@
 <div class="cd-tabs">
 
 	<ul class="cd-tabs-content">
-		<li data-content="inbox" class="selected">
-			<p>Inbox Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum recusandae rem animi accusamus quisquam reprehenderit sed voluptates, numquam, quibusdam velit dolores repellendus tempora corrupti accusantium obcaecati voluptate totam eveniet laboriosam?</p>
-
-			<p>Inbox Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum recusandae rem animi accusamus quisquam reprehenderit sed voluptates, numquam, quibusdam velit dolores repellendus tempora corrupti accusantium obcaecati voluptate totam eveniet laboriosam?</p>
+		<li data-content="home" class="selected">
+			<?php 					
+				try {
+					$db = new PDO("mysql:dbname=test;","root", "");
+					$statement = $db->prepare("SELECT * FROM messages WHERE user_id = ? LIMIT 10");
+					$statement->execute(array($_SESSION['id']));
+					$rows = $statement->fetchAll();
+					foreach ($rows as $row) {
+						echo "<p>" . $row['subject'] . ": " . $row['body'] . "</p>";
+					}
+				} catch (PDOEXception $e){
+					echo "Connection failed:" . $e->getMessage();
+				}
+			 ?>
 		</li>
 
 		<li data-content="sent">
@@ -75,7 +85,7 @@
     
     	<nav>
 		<ul class="cd-tabs-navigation">
-			<li><a data-content="inbox" class="selected" href="#0">Inbox</a></li>
+			<li><a data-content="inbox" class="selected" href="#0">Home</a></li>
 			<li><a data-content="sent" href="#0">Sent</a></li>
 			<li><a data-content="store" href="#0">Archives</a></li>
 			<li><a data-content="bucket" href="#0">Bucket</a></li>

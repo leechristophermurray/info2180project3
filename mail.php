@@ -61,9 +61,10 @@
 		</li>
 
 		<li data-content="store">
-			<p>Store Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum recusandae rem animi accusamus quisquam reprehenderit sed voluptates, numquam, quibusdam velit dolores repellendus tempora corrupti accusantium obcaecati voluptate totam eveniet laboriosam?</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, enim, pariatur. Ab assumenda, accusantium! Consequatur magni placeat quae eos dicta, cum expedita sunt facilis est impedit possimus dolorum sequi nostrum nobis sit praesentium molestias nulla laudantium fugit corporis nam ut saepe harum ipsam? Debitis accusantium, omnis repudiandae modi, distinctio illo voluptatibus aperiam odio veritatis, quam perferendis eaque ullam. Temporibus tempore ad voluptates explicabo ea sit deleniti ipsum quos dolores tempora odio, ab corporis molestiae, eaque optio, perferendis! Cumque libero quia modi! Totam magni rerum id iusto explicabo distinctio, magnam, labore sed nemo expedita velit quam, perspiciatis non temporibus sit minus voluptatum. Iste, cumque sunt suscipit facere iusto asperiores, ullam dolorum excepturi quidem ea quibusdam deserunt illo. Nesciunt voluptates repellat ipsam.</p>
+			<form class="composeform">
+				<textarea name = "content">Enter Message here</textarea>
+				<input name = "recipients" type="text">
+			</form>
 		</li>
 
 		<li data-content="bucket">
@@ -77,7 +78,7 @@
 		<ul class="cd-tabs-navigation">
 			<li><a data-content="inbox" class="selected" href="#0">Inbox</a></li>
 			<li><a data-content="sent" href="#0">Sent</a></li>
-			<li><a data-content="store" href="#0">Archives</a></li>
+			<li><a data-content="store" href="#0">Compose</a></li>
 			<li><a data-content="bucket" href="#0">Bucket</a></li>
 		</ul> <!-- cd-tabs-navigation -->
 	</nav>

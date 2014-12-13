@@ -1,10 +1,25 @@
+<?php 
+session_start();
+if ( $_SESSION['username'] != 'Admin') {
+	header('Location: Index.php');
+} 
+
+?>
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>CheapoMail - Add User</title>
-		<link rel="stylesheet" href="adduser.css">
-	</head>
-	<body>
+<head>
+	<title>Admin Options</title>
+	<link rel="stylesheet" type="text/css" href="style/admin.css"/>
+</head>
+<body>
+	<h1>Welcome Admin!</h1>
+	<div id="navBar">
+		<ul>
+			<a href="index.php"><div id="logout">Logout</div></a>
+		</ul>
+	</div>
+	<div id="formSpace">
 		<form action="adduser.php" method = "post" onsubmit= "return validateForm();">
 			<label for="first_name">First Name:</label>
 			<input class = "adduserinput" type="text" id="first_name" name="first_name">
@@ -16,7 +31,8 @@
 			<input class = "adduserinput" type="text" id="password" name = "password">
 			<input type="submit">
 		</form>
-		<span id="error"></span>
-		<script type = "text/javascript" src = "adduser.js"></script>
-	</body>
+	</div>
+	<span id="error"></span>
+	<script type = "text/javascript" src = "js/adduser.js"></script>
+</body>
 </html>
